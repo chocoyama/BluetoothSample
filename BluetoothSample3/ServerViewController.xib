@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServerViewController" customModule="BluetoothSample3" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="Osx-4v-pBR" id="fmz-23-eZn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="5b6-uS-BFG">
+                    <rect key="frame" x="57" y="194.5" width="300" height="507"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEg-tn-Ips">
+                            <rect key="frame" x="108.5" y="0.0" width="83" height="30"/>
+                            <state key="normal" title="Add Service"/>
+                            <connections>
+                                <action selector="tapAddService:" destination="-1" eventType="touchUpInside" id="rB5-5a-tdn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCL-WM-00H">
+                            <rect key="frame" x="117.5" y="69" width="65" height="30"/>
+                            <state key="normal" title="Advertise"/>
+                            <connections>
+                                <action selector="tapAdvertise:" destination="-1" eventType="touchUpInside" id="5ky-Nl-84w"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rS7-XZ-kE3">
+                            <rect key="frame" x="98.5" y="138" width="103" height="30"/>
+                            <state key="normal" title="Notify to Client"/>
+                            <connections>
+                                <action selector="tapNotify:" destination="-1" eventType="touchUpInside" id="W94-YU-8MR"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Osx-4v-pBR">
+                            <rect key="frame" x="0.0" y="207" width="300" height="300"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="300" id="e9u-1W-Q2g"/>
+                                <constraint firstAttribute="width" constant="300" id="fIb-T8-4YX"/>
+                            </constraints>
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="5b6-uS-BFG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="V1n-IR-vve"/>
+                <constraint firstItem="5b6-uS-BFG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="rpy-nM-rWm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>
